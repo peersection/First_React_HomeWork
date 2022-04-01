@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Persion from './Components/Persion';
+import PersionList from './Components/PersionList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='persionConatainer' >
+       <Persion name = "MyName" />
+       </div>
+      <div>
+        <div className='persListContainer' >
+       <PersionList name = "My best bodys" /> 
+       </div>
+       </div>
+
+
+
+    </>
   );
 }
 
 export default App;
+
